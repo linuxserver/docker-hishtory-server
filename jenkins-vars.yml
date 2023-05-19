@@ -9,6 +9,9 @@ ls_branch: main
 build_armhf: false
 repo_vars:
   - BUILD_VERSION_ARG = 'HISHTORY_RELEASE'
+  - EXT_GIT_BRANCH = 'master'
+  - EXT_USER = 'ddworken'
+  - EXT_REPO = 'hishtory'
   - LS_USER = 'linuxserver'
   - LS_REPO = 'docker-hishtory-server'
   - CONTAINER_NAME = 'hishtory-server'
