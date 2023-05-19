@@ -4,7 +4,7 @@
 project_name: hishtory-server
 project_url: "https://github.com/ddworken/hishtory"
 project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/hishtory-server-icon.png"
-project_blurb: "[hishtory]({{ project_url }}) is a better shell history. It stores your shell history in context (what directory you ran the command in, whether it succeeded or failed, how long it took, etc). This is all stored locally and end-to-end encrypted for syncing to to all your other computers."
+project_blurb: "[hiSHtory]({{ project_url }}) is a better shell history. It stores your shell history in context (what directory you ran the command in, whether it succeeded or failed, how long it took, etc). This is all stored locally and end-to-end encrypted for syncing to to all your other computers."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
 
 # supported architectures
