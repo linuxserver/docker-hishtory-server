@@ -29,14 +29,8 @@ pipeline {
     PR_DOCKERHUB_IMAGE = 'lspipepr/hishtory-server'
     DIST_IMAGE = 'alpine'
     MULTIARCH='true'
-    CI='true'
-    CI_WEB='true'
-    CI_PORT='8080'
-    CI_SSL='false'
-    CI_DELAY='120'
-    CI_DOCKERENV='TZ=US/Pacific'
-    CI_AUTH='user:password'
-    CI_WEBPATH='/healthcheck'
+    CI='false'
+    CI_WEB='false'
   }
   stages {
     // Setup all the basic environment variables needed for the build
