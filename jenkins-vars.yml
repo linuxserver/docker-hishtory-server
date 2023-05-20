@@ -1,0 +1,24 @@
+---
+
+# jenkins variables
+project_name: docker-hishtory-server
+external_type: github_stable
+release_type: stable
+release_tag: latest
+ls_branch: main
+build_armhf: false
+repo_vars:
+  - BUILD_VERSION_ARG = 'HISHTORY_RELEASE'
+  - EXT_GIT_BRANCH = 'master'
+  - EXT_USER = 'ddworken'
+  - EXT_REPO = 'hishtory'
+  - LS_USER = 'linuxserver'
+  - LS_REPO = 'docker-hishtory-server'
+  - CONTAINER_NAME = 'hishtory-server'
+  - DOCKERHUB_IMAGE = 'linuxserver/hishtory-server'
+  - DEV_DOCKERHUB_IMAGE = 'lsiodev/hishtory-server'
+  - PR_DOCKERHUB_IMAGE = 'lspipepr/hishtory-server'
+  - DIST_IMAGE = 'alpine'
+  - MULTIARCH='true'
+  - CI='false'
+  - CI_WEB='false'
