@@ -23,7 +23,7 @@ github.com/ddworken/hishtory                    (devel)                         
 github.com/ddworken/table                       v1.0.2                              go-module  
 github.com/dgraph-io/ristretto                  v0.1.0                              go-module  
 github.com/dustin/go-humanize                   v1.0.0                              go-module  
-github.com/golang/glog                          v1.1.0                              go-module  
+github.com/golang/glog                          v1.0.0                              go-module  
 github.com/google/pprof                         v0.0.0-20211214055906-6f57359322fd  go-module  
 github.com/google/uuid                          v1.3.0                              go-module  
 github.com/jackc/chunkreader/v2                 v2.0.1                              go-module  
@@ -49,7 +49,7 @@ golang.org/x/sys                                v0.13.0                         
 golang.org/x/text                               v0.13.0                             go-module  
 golang.org/x/time                               v0.0.0-20220922220347-f3bd1da661af  go-module  
 golang.org/x/xerrors                            v0.0.0-20220907171357-04be3eba64a2  go-module  
-google.golang.org/protobuf                      v1.30.0                             go-module  
+google.golang.org/protobuf                      v1.28.1                             go-module  
 gopkg.in/DataDog/dd-trace-go.v1                 v1.43.1                             go-module  
 gorm.io/driver/postgres                         v1.3.1                              go-module  
 gorm.io/driver/sqlite                           v1.3.6                              go-module  
