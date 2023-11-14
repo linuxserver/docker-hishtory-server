@@ -12,7 +12,7 @@ if [[ -n ${HISHTORY_POSTGRES_DB} ]]; then
         sleep 3
     done
 elif [[ -n ${HISHTORY_SQLITE_DB} ]]; then
-    echo "Using SQLite database, ensure you have mounted ${HISHTORY_SQLITE_DB} into the container"
+    echo "Using SQLite database, ensure you have mounted $(dirname "${HISHTORY_SQLITE_DB}") to your host"
 else
     echo "No database configured, sleeping..."
     sleep infinity
