@@ -81,7 +81,8 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Etc/UTC
-      - HISHTORY_POSTGRES_DB=postgresql://${HISHTORY_DB_USER}:${HISHTORY_DB_PASS}@hishtory-db:5432/hishtory?sslmode=disable
+      - HISHTORY_POSTGRES_DB=postgresql://${HISHTORY_DB_USER}:${HISHTORY_DB_PASS}@hishtory-db:5432/hishtory?sslmode=disable #optional
+      - HISHTORY_SQLITE_DB=/config/hishtory.db #optional
     ports:
       - 8080:8080
     restart: unless-stopped
@@ -95,7 +96,8 @@ docker run -d \
   -e PUID=1000 \
   -e PGID=1000 \
   -e TZ=Etc/UTC \
-  -e HISHTORY_POSTGRES_DB=postgresql://${HISHTORY_DB_USER}:${HISHTORY_DB_PASS}@hishtory-db:5432/hishtory?sslmode=disable \
+  -e HISHTORY_POSTGRES_DB=postgresql://${HISHTORY_DB_USER}:${HISHTORY_DB_PASS}@hishtory-db:5432/hishtory?sslmode=disable `#optional` \
+  -e HISHTORY_SQLITE_DB=/config/hishtory.db `#optional` \
   -p 8080:8080 \
   --restart unless-stopped \
   lscr.io/linuxserver/hishtory-server:latest
@@ -112,6 +114,7 @@ Containers are configured using parameters passed at runtime (such as those abov
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
 | `-e HISHTORY_POSTGRES_DB=postgresql://${HISHTORY_DB_USER}:${HISHTORY_DB_PASS}@hishtory-db:5432/hishtory?sslmode=disable` | Postgres DB [Connection URI](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING). Special characters must be [URL encoded](https://en.wikipedia.org/wiki/URL_encoding). |
+| `-e HISHTORY_SQLITE_DB=/config/hishtory.db` | SQLite database path. Needs to be a mounted volume for persistence. Don't set at the same time as HISHTORY_POSTGRES_DB. |
 
 ## Environment variables from files (Docker secrets)
 
