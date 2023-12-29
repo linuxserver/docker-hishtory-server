@@ -49,10 +49,10 @@ github.com/tinylib/msgp                         v1.1.6                          
 go.uber.org/atomic                              v1.10.0                             go-module  
 go4.org/intern                                  v0.0.0-20211027215823-ae77deb06f29  go-module  
 go4.org/unsafe/assume-no-moving-gc              v0.0.0-20220617031537-928513b29760  go-module  
-golang.org/x/crypto                             v0.14.0                             go-module  
+golang.org/x/crypto                             v0.17.0                             go-module  
 golang.org/x/exp                                v0.0.0-20220823124025-807a23277127  go-module  
-golang.org/x/sys                                v0.13.0                             go-module  
-golang.org/x/text                               v0.13.0                             go-module  
+golang.org/x/sys                                v0.15.0                             go-module  
+golang.org/x/text                               v0.14.0                             go-module  
 golang.org/x/time                               v0.0.0-20220922220347-f3bd1da661af  go-module  
 golang.org/x/xerrors                            v0.0.0-20220907171357-04be3eba64a2  go-module  
 google.golang.org/protobuf                      v1.28.1                             go-module  
