@@ -11,7 +11,7 @@ busybox-binsh                                   1.36.1-r15                      
 c-ares                                          1.24.0-r1                           apk        
 ca-certificates                                 20230506-r0                         apk        
 ca-certificates-bundle                          20230506-r0                         apk        
-command-line-arguments                          (devel)                             go-module  
+command-line-arguments                          3.39.2                              go-module  
 coreutils                                       9.4-r2                              apk        
 coreutils-env                                   9.4-r2                              apk        
 coreutils-fmt                                   9.4-r2                              apk        
