@@ -17,15 +17,10 @@ development_versions: false
 
 # container parameters
 param_container_name: "{{ project_name }}"
-param_usage_include_vols: false
-
-opt_param_usage_include_vols: false
 
 param_usage_include_ports: true
 param_ports:
   - { external_port: "8080", internal_port: "8080", port_desc: "API port" }
-
-param_usage_include_env: false
 
 opt_param_usage_include_env: true
 opt_param_env_vars:
@@ -40,5 +35,6 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "24.05.24:", desc: "Rebase to Alpine 3.20." }
   - { date: "31.01.24:", desc: "Rebase to Alpine 3.19." }
   - { date: "19.05.23:", desc: "Initial Release." }

@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM golang:1.21-alpine AS builder
+FROM golang:1.22-alpine AS builder
 
 ARG HISHTORY_RELEASE
 # This is a tempoary fix until upstream bumps mattn/go-sqlite to v1.14.19 or above, see https://github.com/mattn/go-sqlite3/issues/1164
@@ -25,7 +25,7 @@ RUN \
   unset GOPATH; go mod download && \
   unset GOPATH; go build -o /server -ldflags "-X main.ReleaseVersion=v0.`cat VERSION`" backend/server/server.go
 
-FROM ghcr.io/linuxserver/baseimage-alpine:3.19
+FROM ghcr.io/linuxserver/baseimage-alpine:3.20
 
 # set version label
 ARG BUILD_DATE
@@ -33,6 +33,8 @@ ARG VERSION
 ARG HISHTORY_RELEASE
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="thespad"
+
+RUN printf "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version
 
 COPY --from=builder /server /app/server
 
