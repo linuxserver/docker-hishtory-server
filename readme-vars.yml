@@ -12,9 +12,6 @@ available_architectures:
   - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
   - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
 
-# development version
-development_versions: false
-
 # container parameters
 param_container_name: "{{ project_name }}"
 
@@ -26,6 +23,8 @@ opt_param_usage_include_env: true
 opt_param_env_vars:
   - { env_var: "HISHTORY_POSTGRES_DB", env_value: "postgresql://${HISHTORY_DB_USER}:${HISHTORY_DB_PASS}@hishtory-db:5432/hishtory?sslmode=disable", desc: "Postgres DB [Connection URI](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING). Special characters must be [URL encoded](https://en.wikipedia.org/wiki/URL_encoding)."}
   - { env_var: "HISHTORY_SQLITE_DB", env_value: "/config/hishtory.db", desc: "SQLite database path. Needs to be a mounted volume for persistence. Don't set at the same time as HISHTORY_POSTGRES_DB."}
+
+readonly_supported: true
 
 app_setup_block_enabled: true
 app_setup_block: |
