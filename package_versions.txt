@@ -12,7 +12,7 @@ c-ares                                          1.28.1-r0                       
 ca-certificates                                 20240226-r0                            apk          
 ca-certificates-bundle                          20240226-r0                            apk          
 catatonit                                       0.2.0-r0                               apk          
-command-line-arguments                          v0.301                                 go-module    
+command-line-arguments                          v0.302                                 go-module    
 coreutils                                       9.5-r1                                 apk          
 coreutils-env                                   9.5-r1                                 apk          
 coreutils-fmt                                   9.5-r1                                 apk          
