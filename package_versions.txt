@@ -12,7 +12,7 @@ c-ares                                          1.28.1-r0                       
 ca-certificates                                 20240226-r0                            apk          
 ca-certificates-bundle                          20240226-r0                            apk          
 catatonit                                       0.2.0-r0                               apk          
-command-line-arguments                          v0.298                                 go-module    
+command-line-arguments                          v0.299                                 go-module    
 coreutils                                       9.5-r1                                 apk          
 coreutils-env                                   9.5-r1                                 apk          
 coreutils-fmt                                   9.5-r1                                 apk          
@@ -68,7 +68,7 @@ go.uber.org/atomic                              v1.10.0                         
 golang.org/x/crypto                             v0.21.0                                go-module    
 golang.org/x/exp                                v0.0.0-20230321023759-10a507213a29     go-module    
 golang.org/x/sync                               v0.6.0                                 go-module    
-golang.org/x/sys                                v0.18.0                                go-module    
+golang.org/x/sys                                v0.20.0                                go-module    
 golang.org/x/term                               v0.18.0                                go-module    
 golang.org/x/text                               v0.14.0                                go-module    
 golang.org/x/time                               v0.5.0                                 go-module    
