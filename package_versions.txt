@@ -2,7 +2,7 @@ NAME                                            VERSION                         
 alpine-baselayout                               3.6.5-r0                               apk          
 alpine-baselayout-data                          3.6.5-r0                               apk          
 alpine-keys                                     2.4-r1                                 apk          
-alpine-release                                  3.20.1-r0                              apk          
+alpine-release                                  3.20.2-r0                              apk          
 apk-tools                                       2.14.4-r0                              apk          
 bash                                            5.2.26-r0                              apk          
 brotli-libs                                     1.1.0-r2                               apk          
@@ -12,12 +12,11 @@ c-ares                                          1.28.1-r0                       
 ca-certificates                                 20240705-r0                            apk          
 ca-certificates-bundle                          20240705-r0                            apk          
 catatonit                                       0.2.0-r0                               apk          
-command-line-arguments                          v0.302                                 go-module    
 coreutils                                       9.5-r1                                 apk          
 coreutils-env                                   9.5-r1                                 apk          
 coreutils-fmt                                   9.5-r1                                 apk          
 coreutils-sha512sum                             9.5-r1                                 apk          
-curl                                            8.8.0-r0                               apk          
+curl                                            8.9.0-r0                               apk          
 findutils                                       4.9.0-r5                               apk          
 github.com/DataDog/datadog-agent/pkg/obfuscate  v0.40.1                                go-module    
 github.com/DataDog/datadog-go                   v4.8.3+incompatible                    go-module    
@@ -29,7 +28,7 @@ github.com/cespare/xxhash/v2                    v2.2.0                          
 github.com/charmbracelet/bubbles                v0.15.0                                go-module    
 github.com/charmbracelet/bubbletea              v0.25.1-0.20240205134909-2b46020ca072  go-module    
 github.com/containerd/console                   v1.0.4-0.20230313162750-1ae8d489ac81   go-module    
-github.com/ddworken/hishtory                    (devel)                                go-module    
+github.com/ddworken/hishtory                    v0.302                                 go-module    
 github.com/ddworken/table                       v1.0.2                                 go-module    
 github.com/dgraph-io/ristretto                  v0.1.0                                 go-module    
 github.com/dustin/go-humanize                   v1.0.1                                 go-module    
@@ -84,7 +83,7 @@ libacl                                          2.3.2-r0                        
 libattr                                         2.5.2-r0                               apk          
 libbsd                                          0.12.2-r0                              apk          
 libcrypto3                                      3.3.1-r3                               apk          
-libcurl                                         8.8.0-r0                               apk          
+libcurl                                         8.9.0-r0                               apk          
 libidn2                                         2.3.7-r0                               apk          
 libintl                                         0.22.5-r0                              apk          
 libmd                                           1.1.0-r0                               apk          
