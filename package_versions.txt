@@ -28,7 +28,7 @@ github.com/cespare/xxhash/v2                    v2.2.0                          
 github.com/charmbracelet/bubbles                v0.15.0                                go-module    
 github.com/charmbracelet/bubbletea              v0.25.1-0.20240205134909-2b46020ca072  go-module    
 github.com/containerd/console                   v1.0.4-0.20230313162750-1ae8d489ac81   go-module    
-github.com/ddworken/hishtory                    v0.302                                 go-module    
+github.com/ddworken/hishtory                    v0.303                                 go-module    
 github.com/ddworken/table                       v1.0.2                                 go-module    
 github.com/dgraph-io/ristretto                  v0.1.0                                 go-module    
 github.com/dustin/go-humanize                   v1.0.1                                 go-module    
