@@ -280,6 +280,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **26.08.24:** - Bump to go 1.23
 * **24.05.24:** - Rebase to Alpine 3.20.
 * **31.01.24:** - Rebase to Alpine 3.19.
 * **19.05.23:** - Initial Release.

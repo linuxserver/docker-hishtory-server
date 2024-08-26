@@ -34,6 +34,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "26.08.24:", desc: "Bump to go 1.23" }
   - { date: "24.05.24:", desc: "Rebase to Alpine 3.20." }
   - { date: "31.01.24:", desc: "Rebase to Alpine 3.19." }
   - { date: "19.05.23:", desc: "Initial Release." }

@@ -1,10 +1,8 @@
 # syntax=docker/dockerfile:1
 
-FROM golang:1.22-alpine AS builder
+FROM golang:1.23-alpine AS builder
 
 ARG HISHTORY_RELEASE
-# This is a tempoary fix until upstream bumps mattn/go-sqlite to v1.14.19 or above, see https://github.com/mattn/go-sqlite3/issues/1164
-ARG CGO_CFLAGS="-D_LARGEFILE64_SOURCE"
 
 RUN \
   apk add --no-cache \
