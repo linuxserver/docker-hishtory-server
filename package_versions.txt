@@ -29,7 +29,7 @@ github.com/DataDog/gostackparse                          v0.7.0                 
 github.com/DataDog/sketches-go                           v1.4.5                                go-module    
 github.com/cespare/xxhash/v2                             v2.3.0                                go-module    
 github.com/charmbracelet/bubbles                         v0.19.0                               go-module    
-github.com/ddworken/hishtory                             v0.309                                go-module    
+github.com/ddworken/hishtory                             v0.310                                go-module    
 github.com/ddworken/table                                v1.0.2                                go-module    
 github.com/dustin/go-humanize                            v1.0.1                                go-module    
 github.com/eapache/queue/v2                              v2.0.0-20230407133247-75960ed334e4    go-module    
