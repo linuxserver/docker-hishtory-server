@@ -16,7 +16,7 @@ coreutils                                                9.5-r1                 
 coreutils-env                                            9.5-r1                                apk          
 coreutils-fmt                                            9.5-r1                                apk          
 coreutils-sha512sum                                      9.5-r1                                apk          
-curl                                                     8.9.1-r1                              apk          
+curl                                                     8.10.0-r0                             apk          
 findutils                                                4.9.0-r5                              apk          
 github.com/DataDog/appsec-internal-go                    v1.7.0                                go-module    
 github.com/DataDog/datadog-agent/pkg/obfuscate           v0.48.0                               go-module    
@@ -29,7 +29,7 @@ github.com/DataDog/gostackparse                          v0.7.0                 
 github.com/DataDog/sketches-go                           v1.4.5                                go-module    
 github.com/cespare/xxhash/v2                             v2.3.0                                go-module    
 github.com/charmbracelet/bubbles                         v0.19.0                               go-module    
-github.com/ddworken/hishtory                             v0.311                                go-module    
+github.com/ddworken/hishtory                             v0.312                                go-module    
 github.com/ddworken/table                                v1.0.2                                go-module    
 github.com/dustin/go-humanize                            v1.0.1                                go-module    
 github.com/eapache/queue/v2                              v2.0.0-20230407133247-75960ed334e4    go-module    
@@ -81,11 +81,11 @@ libacl                                                   2.3.2-r0               
 libattr                                                  2.5.2-r0                              apk          
 libbsd                                                   0.12.2-r0                             apk          
 libcrypto3                                               3.3.2-r0                              apk          
-libcurl                                                  8.9.1-r1                              apk          
+libcurl                                                  8.10.0-r0                             apk          
 libidn2                                                  2.3.7-r0                              apk          
 libintl                                                  0.22.5-r0                             apk          
 libmd                                                    1.1.0-r0                              apk          
-libncursesw                                              6.4_p20240420-r0                      apk          
+libncursesw                                              6.4_p20240420-r1                      apk          
 libproc2                                                 4.0.4-r0                              apk          
 libpsl                                                   0.21.5-r1                             apk          
 libssl3                                                  3.3.2-r0                              apk          
@@ -97,7 +97,7 @@ modernc.org/memory                                       v1.8.0                 
 modernc.org/sqlite                                       v1.32.0                               go-module    
 musl                                                     1.2.5-r0                              apk          
 musl-utils                                               1.2.5-r0                              apk          
-ncurses-terminfo-base                                    6.4_p20240420-r0                      apk          
+ncurses-terminfo-base                                    6.4_p20240420-r1                      apk          
 netcat-openbsd                                           1.226-r0                              apk          
 nghttp2-libs                                             1.62.1-r0                             apk          
 oniguruma                                                6.9.9-r0                              apk          
