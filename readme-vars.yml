@@ -6,35 +6,71 @@ project_url: "https://github.com/ddworken/hishtory"
 project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/hishtory-server-icon.png"
 project_blurb: "[hiSHtory]({{ project_url }}) is a better shell history. It stores your shell history in context (what directory you ran the command in, whether it succeeded or failed, how long it took, etc). This is all stored locally and end-to-end encrypted for syncing to to all your other computers."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
-
 # supported architectures
 available_architectures:
-  - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
-  - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
-
+  - {arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
+  - {arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
 # container parameters
 param_container_name: "{{ project_name }}"
-
 param_usage_include_ports: true
 param_ports:
-  - { external_port: "8080", internal_port: "8080", port_desc: "API port" }
-
+  - {external_port: "8080", internal_port: "8080", port_desc: "API port"}
 opt_param_usage_include_env: true
 opt_param_env_vars:
-  - { env_var: "HISHTORY_POSTGRES_DB", env_value: "postgresql://${HISHTORY_DB_USER}:${HISHTORY_DB_PASS}@hishtory-db:5432/hishtory?sslmode=disable", desc: "Postgres DB [Connection URI](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING). Special characters must be [URL encoded](https://en.wikipedia.org/wiki/URL_encoding)."}
-  - { env_var: "HISHTORY_SQLITE_DB", env_value: "/config/hishtory.db", desc: "SQLite database path. Needs to be a mounted volume for persistence. Don't set at the same time as HISHTORY_POSTGRES_DB."}
-
+  - {env_var: "HISHTORY_POSTGRES_DB", env_value: "postgresql://${HISHTORY_DB_USER}:${HISHTORY_DB_PASS}@hishtory-db:5432/hishtory?sslmode=disable", desc: "Postgres DB [Connection URI](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING). Special characters must be [URL encoded](https://en.wikipedia.org/wiki/URL_encoding)."}
+  - {env_var: "HISHTORY_SQLITE_DB", env_value: "/config/hishtory.db", desc: "SQLite database path. Needs to be a mounted volume for persistence. Don't set at the same time as HISHTORY_POSTGRES_DB."}
 readonly_supported: true
-
 app_setup_block_enabled: true
 app_setup_block: |
   After you have installed hishtory on your machine, add `export HISHTORY_SERVER=http://1.2.3.4:8080` (with your server details) to your shellrc. Then run `hishtory init` (or `hishtory init ${SECRET_KEY}`) to initialise hishtory against your local server.
 
   See the [project readme](https://github.com/ddworken/hishtory/blob/master/README.md) for more details.
-
+# init diagram
+init_diagram: |
+  "hishtory-server:latest": {
+    docker-mods
+    base {
+      fix-attr +\nlegacy cont-init
+    }
+    docker-mods -> base
+    legacy-services
+    custom services
+    init-services -> legacy-services
+    init-services -> custom services
+    custom services -> legacy-services
+    legacy-services -> ci-service-check
+    init-migrations -> init-adduser
+    init-os-end -> init-config
+    init-config -> init-config-end
+    init-hishtory-config -> init-config-end
+    init-os-end -> init-crontab-config
+    init-mods-end -> init-custom-files
+    base -> init-envfile
+    init-config -> init-hishtory-config
+    base -> init-migrations
+    base -> init-mods
+    init-config-end -> init-mods
+    init-mods -> init-mods-end
+    init-mods-package-install -> init-mods-end
+    init-mods -> init-mods-package-install
+    base -> init-os-end
+    init-adduser -> init-os-end
+    init-envfile -> init-os-end
+    init-migrations -> init-os-end
+    init-custom-files -> init-services
+    init-mods-end -> init-services
+    init-services -> svc-cron
+    svc-cron -> legacy-services
+    init-services -> svc-hishtory
+    svc-hishtory -> legacy-services
+  }
+  Base Images: {
+    "baseimage-alpine:3.20"
+  }
+  "hishtory-server:latest" <- Base Images
 # changelog
 changelogs:
-  - { date: "26.08.24:", desc: "Bump to go 1.23" }
-  - { date: "24.05.24:", desc: "Rebase to Alpine 3.20." }
-  - { date: "31.01.24:", desc: "Rebase to Alpine 3.19." }
-  - { date: "19.05.23:", desc: "Initial Release." }
+  - {date: "26.08.24:", desc: "Bump to go 1.23"}
+  - {date: "24.05.24:", desc: "Rebase to Alpine 3.20."}
+  - {date: "31.01.24:", desc: "Rebase to Alpine 3.19."}
+  - {date: "19.05.23:", desc: "Initial Release."}
