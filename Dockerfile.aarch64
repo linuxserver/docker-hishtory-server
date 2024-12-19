@@ -23,7 +23,7 @@ RUN \
   unset GOPATH; go mod download && \
   unset GOPATH; go build -o /server -ldflags "-X main.ReleaseVersion=v0.`cat VERSION`" backend/server/server.go
 
-FROM ghcr.io/linuxserver/baseimage-alpine:arm64v8-3.20
+FROM ghcr.io/linuxserver/baseimage-alpine:arm64v8-3.21
 
 # set version label
 ARG BUILD_DATE
@@ -32,7 +32,10 @@ ARG HISHTORY_RELEASE
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="thespad"
 
-RUN printf "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version
+RUN \
+  apk add --no-cache \
+    postgresql16-client && \
+  printf "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version
 
 COPY --from=builder /server /app/server
 
