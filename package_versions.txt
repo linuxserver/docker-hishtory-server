@@ -58,14 +58,16 @@ github.com/aws/aws-sdk-go-v2/service/sso                                     v1.
 github.com/aws/aws-sdk-go-v2/service/ssooidc                                 v1.28.8                               go-module    
 github.com/aws/aws-sdk-go-v2/service/sts                                     v1.33.6                               go-module    
 github.com/aws/smithy-go                                                     v1.22.1                               go-module    
+github.com/beorn7/perks                                                      v1.0.1                                go-module    
 github.com/blang/semver                                                      v3.5.1+incompatible                   go-module    
 github.com/cenkalti/backoff/v4                                               v4.3.0                                go-module    
 github.com/cespare/xxhash/v2                                                 v2.3.0                                go-module    
 github.com/charmbracelet/bubbles                                             v0.19.0                               go-module    
 github.com/containerd/stargz-snapshotter/estargz                             v0.15.1                               go-module    
 github.com/cyberphone/json-canonicalization                                  v0.0.0-20231217050601-ba74d44ecf5f    go-module    
-github.com/ddworken/hishtory                                                 v0.330                                go-module    
+github.com/ddworken/hishtory                                                 v0.331                                go-module    
 github.com/ddworken/table                                                    v1.0.2                                go-module    
+github.com/dgraph-io/ristretto                                               v0.2.0                                go-module    
 github.com/digitorus/pkcs7                                                   v0.0.0-20230818184609-3a137a874352    go-module    
 github.com/digitorus/timestamp                                               v0.0.0-20231217203849-220c5c2851b7    go-module    
 github.com/docker/cli                                                        v27.1.2+incompatible                  go-module    
@@ -75,6 +77,8 @@ github.com/docker/go                                                         v1.
 github.com/dustin/go-humanize                                                v1.0.1                                go-module    
 github.com/eapache/queue/v2                                                  v2.0.0-20230407133247-75960ed334e4    go-module    
 github.com/ebitengine/purego                                                 v0.6.0-alpha.5                        go-module    
+github.com/eko/gocache/lib/v4                                                v4.2.0                                go-module    
+github.com/eko/gocache/store/ristretto/v4                                    v4.2.2                                go-module    
 github.com/felixge/httpsnoop                                                 v1.0.4                                go-module    
 github.com/fsnotify/fsnotify                                                 v1.7.0                                go-module    
 github.com/glebarez/go-sqlite                                                v1.22.0                               go-module    
@@ -95,6 +99,7 @@ github.com/go-openapi/strfmt                                                 v0.
 github.com/go-openapi/swag                                                   v0.23.0                               go-module    
 github.com/go-openapi/validate                                               v0.24.0                               go-module    
 github.com/golang-jwt/jwt/v5                                                 v5.2.1                                go-module    
+github.com/golang/mock                                                       v1.6.0                                go-module    
 github.com/golang/snappy                                                     v0.0.4                                go-module    
 github.com/google/certificate-transparency-go                                v1.2.1                                go-module    
 github.com/google/go-containerregistry                                       v0.20.2                               go-module    
@@ -136,6 +141,7 @@ github.com/mattn/go-sqlite3                                                  v1.
 github.com/mitchellh/colorstring                                             v0.0.0-20190213212951-d06e56a500db    go-module    
 github.com/mitchellh/go-homedir                                              v1.1.0                                go-module    
 github.com/mitchellh/mapstructure                                            v1.5.0                                go-module    
+github.com/munnerz/goautoneg                                                 v0.0.0-20191010083416-a7dc8b61c822    go-module    
 github.com/nozzle/throttler                                                  v0.0.0-20180817012639-2ea982251481    go-module    
 github.com/oklog/ulid                                                        v1.3.1                                go-module    
 github.com/opencontainers/go-digest                                          v1.0.0                                go-module    
@@ -146,6 +152,10 @@ github.com/pelletier/go-toml/v2                                              v2.
 github.com/philhofer/fwd                                                     v1.1.2                                go-module    
 github.com/pkg/browser                                                       v0.0.0-20240102092130-5ac0b6a4141c    go-module    
 github.com/pkg/errors                                                        v0.9.1                                go-module    
+github.com/prometheus/client_golang                                          v1.20.5                               go-module    
+github.com/prometheus/client_model                                           v0.6.1                                go-module    
+github.com/prometheus/common                                                 v0.55.0                               go-module    
+github.com/prometheus/procfs                                                 v0.15.1                               go-module    
 github.com/remyoudompheng/bigfft                                             v0.0.0-20230129092748-24d4a6f8daec    go-module    
 github.com/richardartoul/molecule                                            v1.0.1-0.20240531184615-7ca0df43c0b3  go-module    
 github.com/rivo/uniseg                                                       v0.4.7                                go-module    
@@ -179,7 +189,7 @@ github.com/spf13/viper                                                       v1.
 github.com/subosito/gotenv                                                   v1.6.0                                go-module    
 github.com/syndtr/goleveldb                                                  v1.0.1-0.20220721030215-126854af5e6d  go-module    
 github.com/theupdateframework/go-tuf                                         v0.7.0                                go-module    
-github.com/theupdateframework/go-tuf/v2                                      v2.0.0-20240207172116-f5cf71290141    go-module    
+github.com/theupdateframework/go-tuf/v2                                      v2.0.1                                go-module    
 github.com/tink-crypto/tink-go-awskms/v2                                     v2.1.0                                go-module    
 github.com/tink-crypto/tink-go-gcpkms/v2                                     v2.2.0                                go-module    
 github.com/tink-crypto/tink-go/v2                                            v2.3.0                                go-module    
@@ -195,6 +205,7 @@ go.opentelemetry.io/otel/metric                                              v1.
 go.opentelemetry.io/otel/trace                                               v1.32.0                               go-module    
 go.step.sm/crypto                                                            v0.57.0                               go-module    
 go.uber.org/atomic                                                           v1.11.0                               go-module    
+go.uber.org/mock                                                             v0.5.0                                go-module    
 go.uber.org/multierr                                                         v1.11.0                               go-module    
 go.uber.org/zap                                                              v1.27.0                               go-module    
 golang.org/x/crypto                                                          v0.32.0                               go-module    
