@@ -23,7 +23,7 @@ coreutils                                                                    9.5
 coreutils-env                                                                9.5-r2                                apk          
 coreutils-fmt                                                                9.5-r2                                apk          
 coreutils-sha512sum                                                          9.5-r2                                apk          
-curl                                                                         8.12.1-r0                             apk          
+curl                                                                         8.12.1-r1                             apk          
 filippo.io/edwards25519                                                      v1.1.0                                go-module    
 findutils                                                                    4.10.0-r0                             apk          
 github.com/Azure/azure-sdk-for-go/sdk/azcore                                 v1.17.0                               go-module    
@@ -237,7 +237,7 @@ k8s.io/klog/v2                                                               v2.
 libattr                                                                      2.5.2-r2                              apk          
 libbsd                                                                       0.12.2-r0                             apk          
 libcrypto3                                                                   3.3.3-r0                              apk          
-libcurl                                                                      8.12.1-r0                             apk          
+libcurl                                                                      8.12.1-r1                             apk          
 libidn2                                                                      2.3.7-r0                              apk          
 libintl                                                                      0.22.5-r0                             apk          
 libmd                                                                        1.1.0-r0                              apk          
