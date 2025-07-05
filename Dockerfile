@@ -23,7 +23,7 @@ RUN \
   unset GOPATH; go mod download && \
   unset GOPATH; go build -o /server -ldflags "-X main.ReleaseVersion=v0.`cat VERSION`" backend/server/server.go
 
-FROM ghcr.io/linuxserver/baseimage-alpine:3.21
+FROM ghcr.io/linuxserver/baseimage-alpine:3.22
 
 # set version label
 ARG BUILD_DATE
