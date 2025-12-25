@@ -24,7 +24,7 @@ readonly_supported: true
 nonroot_supported: true
 app_setup_block_enabled: true
 app_setup_block: |
-  After you have installed hishtory on your machine, add `export HISHTORY_SERVER=http://1.2.3.4:8080` (with your server details) to your shellrc. Then run `hishtory init` (or `hishtory init ${SECRET_KEY}`) to initialise hishtory against your local server.
+  After you have installed hishtory on your machine, add `export HISHTORY_SERVER=http://127.0.0.1:8080` (with your server details) to your shellrc. Then run `hishtory init` (or `hishtory init ${SECRET_KEY}`) to initialise hishtory against your local server.
 
   See the [project readme](https://github.com/ddworken/hishtory/blob/master/README.md) for more details.
 # init diagram
@@ -70,6 +70,7 @@ init_diagram: |
   "hishtory-server:latest" <- Base Images
 # changelog
 changelogs:
+  - {date: "25.12.25:", desc: "Rebase to Alpine 3.23."}
   - {date: "05.07.25:", desc: "Rebase to Alpine 3.22."}
   - {date: "19.12.24:", desc: "Rebase to Alpine 3.21."}
   - {date: "26.08.24:", desc: "Bump to go 1.23"}
