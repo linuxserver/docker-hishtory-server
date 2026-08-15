@@ -10,7 +10,7 @@ RUN \
     curl && \
   if [ -z ${HISHTORY_RELEASE+x} ]; then \
     HISHTORY_RELEASE=$(curl -sX GET "https://api.github.com/repos/ddworken/hishtory/releases/latest" \
-    | awk '/tag_name/{print $4;exit}' FS='[""]'); \
+    | jq -r '.tag_name'); \
   fi && \
   curl -s -o \
     /tmp/hishtory.tar.gz -L \
